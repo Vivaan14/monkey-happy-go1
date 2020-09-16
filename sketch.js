@@ -60,6 +60,8 @@ Obstacle.addImage(obstacleImage);
 Obstacle.scale = 0.1;
 Obstacle.velocityX = -6;
 obstacleGroup.add(Obstacle);
+ Obstacle.depth = Monkey.depth;
+Monkey.depth = Monkey.depth +1;
 }
    if(obstacleGroup.isTouching(animalGroup)){
   Monkey.scale = 0.2;
